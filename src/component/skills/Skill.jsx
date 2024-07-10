@@ -6,17 +6,17 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 
 const Skill = () => {
   return (
-    <div id="skill1">
+    <div id="skill1" className="p-2">
 
-      <h5 id="skills" className="text-5xl font-semibold text-white text-center my-10 border-b-4 w-[30%] mx-auto py-5 border-yellow-400 ">Technical Skills</h5>
-      <div className="my-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 items-center justify-center">
+      <h5 id="skills" className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[70%] lg:w-[30%] mx-auto py-5 border-yellow-400 ">Technical Skills</h5>
+      <div className="my-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 items-center justify-center">
       <div className="my-skills shadow-xl shadow-yellow-400">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">HTML5
-              <span className="text-sm mt-2 text-gray-200">intermediate</span>
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">HTML5
+              <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-yellow-400">
+            <h2 className="text-5xl text-yellow-400">
               <FaHtml5></FaHtml5>
             </h2>
           </div>
@@ -25,11 +25,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-sky-400">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">CSS3
-              <span className="text-sm mt-2 text-gray-200">intermediate</span>
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">CSS3
+              <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-sky-400">
+            <h2 className="text-5xl text-sky-400">
             <IoLogoCss3 />
             </h2>
           </div>
@@ -38,11 +38,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-[#7d11f8]">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Bootstrap
-              <span className="text-sm mt-2 text-gray-200">intermediate</span>
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Bootstrap
+              <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-[#7d11f8]">
+            <h2 className="text-5xl text-[#7d11f8]">
             <FaBootstrap />
             </h2>
           </div>
@@ -51,11 +51,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-yellow-600">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Javascript
-              <span className="text-sm mt-2 text-gray-200">intermediate</span>
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Javascript
+              <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-yellow-400">
+            <h2 className="text-5xl text-yellow-400">
             <IoLogoJavascript />
             </h2>
           </div>
@@ -64,11 +64,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-sky-400">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Tailwind
-              <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Tailwind
+              <span className="text-sm mt-2 text-gray-200 font-normal ">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-sky-400">
+            <h2 className="text-5xl text-sky-400">
             <RiTailwindCssLine />
             </h2>
           </div>
@@ -78,8 +78,8 @@ const Skill = () => {
 
       <div className="my-skills shadow-lg shadow-[#58c4dc]">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">React js
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">React js
               <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
             <h2 className="text-6xl text-[#58c4dc]">
@@ -92,8 +92,8 @@ const Skill = () => {
 
       <div className="my-skills shadow-lg shadow-gray-400">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Next js
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Next js
               <span className="text-sm mt-2 text-gray-200 font-normal">basic</span>
             </h1>
             <h2 className="text-6xl text-black">
@@ -107,11 +107,11 @@ const Skill = () => {
 
       <div className="my-skills shadow-lg shadow-[#6aa05c]">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Node js
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Node js
               <span className="text-sm mt-2 text-gray-200 font-normal">Basic</span>
             </h1>
-            <h2 className="text-6xl text-[#6aa05c]">
+            <h2 className="text-2xl text-[#6aa05c]">
             <IoLogoNodejs />
             </h2>
           </div>
@@ -120,11 +120,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-white">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Express js
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Express js
               <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-white">
+            <h2 className="text-5xl text-white">
             <SiExpress />
 
             </h2>
@@ -134,11 +134,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-[#f58304]">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">Firebase
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Firebase
               <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-[#f58304]">
+            <h2 className="text-5xl text-[#f58304]">
             <IoLogoFirebase />
 
             </h2>
@@ -148,11 +148,11 @@ const Skill = () => {
       </div>
       <div className="my-skills shadow-lg shadow-[#00ed64]">
         <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-4xl flex flex-col items-center font-bold text-white">MongoDB
+          <div className="h-full flex flex-col justify-center items-center gap-2">
+            <h1 className="text-2xl flex flex-col items-center font-bold text-white">MongoDB
               <span className="text-sm mt-2 text-gray-200 font-normal">intermediate</span>
             </h1>
-            <h2 className="text-6xl text-[#00ed64]">
+            <h2 className="text-5xl text-[#00ed64]">
             <SiMongodb />
 
             </h2>

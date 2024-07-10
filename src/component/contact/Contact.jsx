@@ -1,41 +1,51 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
 import { RiMessengerLine } from "react-icons/ri";
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  // State to manage form inputs
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    
-    toast.success("Message sent successfully")
 
-
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+    emailjs
+      .sendForm('service_lzlten9', 'template_yi6d4ls', form.current, {
+        publicKey: 'cf4UHtPO-iuc0Lf0D',
+      })
+      .then(
+        () => {
+          toast.success('SUCCESS!');
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
+
+  const handleMessengerClick = () => {
+    const userName = "Saidul Islam";
+    const messengerURL = `https://m.me/${userName}`
+    window.open(messengerURL, '_blank');
+}
+
+const handleWhatsAppClick = () => {
+  const phoneNumber = '+8801639279028';
+  const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+  const whatsappURL = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
+  window.open(whatsappURL, '_blank');
+};
+
+
 
   return (
-    <div id="contact1">
-      <h5 id="contact" className="text-5xl font-semibold text-white text-center my-10 border-b-4 w-[30%] mx-auto py-5 border-yellow-400 ">For Contact</h5>
-      <section className="py-6 bg-gray-800 dark:bg-gray-100 text-gray-50 dark:text-gray-900">
+    <div className="py-10" id="contact1">
+      <h5 id="contact" className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[70%] lg:w-[30%] mx-auto py-5 border-yellow-400">For Contact</h5>
+      <section className="py-6 bg-gray-800 text-gray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
             <h1 className="text-4xl font-bold">Get in touch</h1>
@@ -43,34 +53,33 @@ const Contact = () => {
               Fill in the form to start conversation or <FiArrowDown />
             </p>
             <div className="space-y-4">
-              <p className="flex items-center gap-4">
+              <p className="cursor-pointer flex items-center gap-4">
                 <CgMail className="text-2xl" />
                 <span>saidulislams9028@gmail.com</span>
               </p>
-              <p className="flex items-center gap-4">
+              <p onClick={handleWhatsAppClick}  className="cursor-pointer flex items-center gap-4">
                 <FaWhatsapp className="text-2xl" />
                 <span>+8801639279028</span>
               </p>
-              <a
-                href="https://www.facebook.com/profile.php?id=100024676355421"
-                target="_blank"
-                className="flex items-center gap-4"
+              <p onClick={handleMessengerClick}
+               
+                className="cursor-pointer flex items-center gap-4"
               >
                 <RiMessengerLine className="text-2xl" />
                 <span>Saidul</span>
-              </a>
+              </p>
             </div>
           </div>
-          <form onSubmit={handleSubmit} noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+
+          <form onSubmit={sendEmail} ref={form}  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
             <label className="block">
               <span className="mb-1">Name</span>
               <input
                 type="text"
                 placeholder="Your Name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="border p-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 focus:dark:ring-violet-600 bg-gray-800 dark:bg-gray-100"
+                
+                className="border p-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
               />
             </label>
             <label className="block">
@@ -79,9 +88,8 @@ const Contact = () => {
                 type="email"
                 placeholder="your email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="block border p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 focus:dark:ring-violet-600 bg-gray-800 dark:bg-gray-100"
+                
+                className="block border p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
               />
             </label>
             <label className="block">
@@ -90,16 +98,15 @@ const Contact = () => {
                 name="message"
                 rows="3"
                 placeholder="write your message"
-                value={formData.message}
-                onChange={handleChange}
-                className="block w-full p-2 rounded-md border focus:ring focus:ring-opacity-75 focus:ring-violet-400 focus:dark:ring-violet-600 bg-gray-800 dark:bg-gray-100"
+                
+                className="block w-full p-2 rounded-md border focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"
               ></textarea>
             </label>
-            <button 
+            <button
               type="submit"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50 focus:ring-violet-400 focus:dark:ring-violet-600 hover:ring-violet-400 hover:dark:ring-violet-600"
+              className="self-center px-8 py-3 text-lg rounded bg-green-400 font-bold focus:ring hover:ring focus:ring-opacity-75 text-gray-900 focus:ring-violet-400 hover:ring-violet-400"
             >
-              Submit
+              Send Message
             </button>
           </form>
         </div>

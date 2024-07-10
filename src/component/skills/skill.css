@@ -1,7 +1,7 @@
 .my-skills {
   position: relative;
-  width: 200px;
-  height: 210px;
+  width: 150px; /* Reduced width */
+  height: 160px; /* Reduced height */
   border-radius: 14px;
   z-index: 1111;
   overflow: hidden;
@@ -9,22 +9,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
- 
 }
 
 .bg {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 190px;
-  height: 200px;
+  width: 140px; /* Adjusted width */
+  height: 150px; /* Adjusted height */
   z-index: 2;
-  background: slategray ;
+  background: slategray;
   backdrop-filter: blur(24px);
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 .blob {
@@ -32,10 +29,9 @@
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px; /* Adjusted width */
+  height: 120px; /* Adjusted height */
   border-radius: 50%;
-  
   opacity: 1;
   filter: blur(12px);
   animation: blob-bounce 5s infinite ease;
@@ -47,15 +43,15 @@
   }
 
   25% {
-    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    transform: translate(-100%, -100%) translate3d(75%, 0, 0); /* Adjusted translation */
   }
 
   50% {
-    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    transform: translate(-100%, -100%) translate3d(75%, 75%, 0); /* Adjusted translation */
   }
 
   75% {
-    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    transform: translate(-100%, -100%) translate3d(0, 75%, 0); /* Adjusted translation */
   }
 
   100% {

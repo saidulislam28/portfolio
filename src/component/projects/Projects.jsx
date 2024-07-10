@@ -10,10 +10,10 @@ const Projects = () => {
     <div id='projects1'>
 
       
-<h5 id='projects' className="text-5xl font-semibold text-white text-center my-10 border-b-4 w-[30%] mx-auto py-5 border-yellow-400 ">My Projects</h5>
+<h5 id='projects' className=" text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[60%] lg:w-[30%] mx-auto py-5 border-yellow-400 ">My Projects</h5>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-3 my-10">
-      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
           src={assignment10}
@@ -25,12 +25,12 @@ const Projects = () => {
            
             <p
             
-              className=" mt-2 text-2xl font-semibold text-gray-800 dark:text-white "
+              className=" mt-2 text-2xl font-semibold text-gray-800 "
               
             >
              TourOp
             </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-600 ">
             TourOp is a dynamic web application designed for travel enthusiasts looking to explore the best tourist destinations across South Asia. With TourOp, users can effortlessly browse through a comprehensive list of stunning locations, add new places, and keep the information up-to-date by editing details about the creators of each tour place card.
             </p>
           </div>
@@ -44,7 +44,7 @@ const Projects = () => {
 
         </div>
       </div>
-      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
           src={assignment11}
@@ -56,12 +56,12 @@ const Projects = () => {
            
             <p
             
-              className=" mt-2 text-2xl font-semibold text-gray-800 dark:text-white "
+              className=" mt-2 text-2xl font-semibold text-gray-800 "
               
             >
              StudyMate
             </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-600 ">
             Study Mate is an innovative web platform designed to enhance collaborative learning among students. It serves as a hub where students can manage their academic tasks efficiently by taking on assignments, creating tasks for peers, and providing constructive feedback.
             </p>
           </div>
@@ -76,7 +76,7 @@ const Projects = () => {
 
         </div>
       </div>
-      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
           src={assignment12}
@@ -88,12 +88,12 @@ const Projects = () => {
            
             <p
             
-              className=" mt-2 text-2xl font-semibold text-gray-800 dark:text-white "
+              className=" mt-2 text-2xl font-semibold text-gray-800 "
               
             >
              MicroEarn
             </p>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-600 ">
             Micro Earn is an innovative platform designed to facilitate micro-earning opportunities for users. It provides a streamlined environment where individuals can perform small tasks, complete various assignments, and earn rewards.
             </p>
           </div>

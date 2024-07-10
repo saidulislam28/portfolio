@@ -1,13 +1,20 @@
 const Education = () => {
   return (
-    <div id="education1"  className="p-2">
-<h5 id="education" className="text-5xl font-semibold text-white text-center my-10 border-b-4 w-[60%] mx-auto py-5 border-yellow-400 ">Education & Experience status</h5>
+    <div id="education1" className="p-2">
+      <h5
+        id="education"
+        className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[80%] lg:w-[60%] mx-auto py-5 border-yellow-400 "
+      >
+        Education
+      </h5>
 
-      <section className="dark:bg-gray-100 dark:text-gray-800  my-10">
-        <div className="container flex justify-center flex-col-reverse mx-auto lg:flex-row">
-          <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
-          <h2 className="text-3xl text-green-500 font-semibold underline">Education</h2>
-            <div className="flex space-x-2 sm:space-x-4">
+     
+        <div className="">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-5 rounded-sm ">
+            {/* <h2 className="text-3xl text-green-500 font-semibold underline">
+              Education
+            </h2> */}
+            <div className="flex space-x-2 sm:space-x-4 border rounded-xl p-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -23,24 +30,18 @@ const Education = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-medium text-white">
-                  B.B.A Honours
-                </p>
+                <p className="text-lg font-medium text-white">B.B.A Honours</p>
                 <p className="leading-snug">
-                Instittute: Bangabandhu College, Pallabi.
+                  Instittute: Bangabandhu College, Pallabi.
                 </p>
+                <p className="leading-snug">session: 2022-2023</p>
                 <p className="leading-snug">
-                 session: 2022-2023
+                  Department: Business Administration/Management
                 </p>
-                <p className="leading-snug">
-                 Department:  Business Administration/Management 
-                </p>
-                <p className="leading-snug">
-                 Result: 1st year.
-                </p>
+                <p className="leading-snug">Result: 1st year.</p>
               </div>
             </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            <div className="flex space-x-2 sm:space-x-4 border rounded-xl p-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -56,24 +57,16 @@ const Education = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-medium text-white">
-                  H.S.C
-                </p>
+                <p className="text-lg font-medium text-white">H.S.C</p>
                 <p className="leading-snug">
-                Instittute: Govt. Bangla College, Dhaka.
+                  Instittute: Govt. Bangla College, Dhaka.
                 </p>
-                <p className="leading-snug">
-                 session: 2020-2021
-                </p>
-                <p className="leading-snug">
-                 Department:  Business Studies
-                </p>
-                <p className="leading-snug">
-                 Result: 4.92 out of 5.00.
-                </p>
+                <p className="leading-snug">session: 2020-2021</p>
+                <p className="leading-snug">Department: Business Studies</p>
+                <p className="leading-snug">Result: 4.92 out of 5.00.</p>
               </div>
             </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            <div className="flex space-x-2 sm:space-x-4  border rounded-xl p-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -89,29 +82,20 @@ const Education = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-medium text-white">
-                 S.S.C
-                </p>
+                <p className="text-lg font-medium text-white">S.S.C</p>
                 <p className="leading-snug">
-                Instittute: Islamee Adarsha High School, Mirpur.
+                  Instittute: Islamee Adarsha High School, Mirpur.
                 </p>
-                <p className="leading-snug">
-                 session: 2018-2019
-                </p>
-                <p className="leading-snug">
-                 Department:  Business Studies
-                </p>
-                <p className="leading-snug">
-                 Result: 4.50 out of 5.00.
-                </p>
+                <p className="leading-snug">session: 2018-2019</p>
+                <p className="leading-snug">Department: Business Studies</p>
+                <p className="leading-snug">Result: 4.50 out of 5.00.</p>
               </div>
             </div>
-
-           
-           
           </div>
-          <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
-          <h1 className="text-3xl text-green-500 font-semibold underline">Experience</h1>
+          {/* <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5  ">
+            <h1 className="text-3xl text-green-500 font-semibold underline">
+              Experience
+            </h1>
             <div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +116,11 @@ const Education = () => {
                   Front End Development
                 </p>
                 <p className="leading-snug">
-                I successfully completed a comprehensive web development course from Programming Hero, a well-regarded platform known for its hands-on and project-based approach to teaching. The course covered a wide array of essential web development technologies and skills.
+                  I successfully completed a comprehensive web development
+                  course from Programming Hero, a well-regarded platform known
+                  for its hands-on and project-based approach to teaching. The
+                  course covered a wide array of essential web development
+                  technologies and skills.
                 </p>
               </div>
             </div>
@@ -156,7 +144,11 @@ const Education = () => {
                   Web Development
                 </p>
                 <p className="leading-snug">
-                I worked on various real-world projects, enabling me to apply theoretical knowledge in practical scenarios. This hands-on experience has significantly strengthened my front-end development skills, preparing me to create intuitive and efficient web interfaces.
+                  I worked on various real-world projects, enabling me to apply
+                  theoretical knowledge in practical scenarios. This hands-on
+                  experience has significantly strengthened my front-end
+                  development skills, preparing me to create intuitive and
+                  efficient web interfaces.
                 </p>
               </div>
             </div>
@@ -177,18 +169,21 @@ const Education = () => {
               </svg>
               <div className="space-y-2">
                 <p className="text-lg font-medium leading-snug text-white">
-                MERN Stack Development
+                  MERN Stack Development
                 </p>
                 <p className="leading-snug">
-                I completed a comprehensive MERN Stack development course from Programming Hero, where I mastered MongoDB for database design and CRUD operations, Express.js for building server-side applications and RESTful APIs, React for developing dynamic front-end applications with modern techniques, and Node.js for creating scalable server-side applications. 
+                  I completed a comprehensive MERN Stack development course from
+                  Programming Hero, where I mastered MongoDB for database design
+                  and CRUD operations, Express.js for building server-side
+                  applications and RESTful APIs, React for developing dynamic
+                  front-end applications with modern techniques, and Node.js for
+                  creating scalable server-side applications.
                 </p>
               </div>
             </div>
-           
-          </div>
-          
+          </div> */}
         </div>
-      </section>
+     
     </div>
   );
 };
