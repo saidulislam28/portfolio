@@ -18,7 +18,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          toast.success('SUCCESS!');
+          toast.success('Message sent successfully!');
           e.target.reset();
         },
         (error) => {
