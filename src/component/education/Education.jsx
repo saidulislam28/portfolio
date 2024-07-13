@@ -3,7 +3,7 @@ const Education = () => {
     <div id="education1" className="p-2">
       <h5
         id="education"
-        className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[80%] lg:w-[60%] mx-auto py-5 border-yellow-400 "
+        className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[50%] lg:w-[30%] mx-auto py-5 border-yellow-400 "
       >
         Education
       </h5>

@@ -1,12 +1,15 @@
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import "./about.css";
 import { FiDownload } from "react-icons/fi";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-center mx-auto mt-20 gap-5 lg:gap-10">
       <div className="flex flex-col-reverse md:flex-row items-center gap-5 lg:gap-20 w-full lg:w-[80%] h-full">
         {/* Social Links */}
+        <Fade direction="left" duration={2000}>
+
         <div className="flex lg:flex-col justify-center gap-4">
           <a href="https://github.com/saidulislam28/" target="_blank">
             <IoLogoGithub className="text-3xl text-white" />
@@ -21,6 +24,7 @@ const About = () => {
             <IoLogoInstagram className="text-3xl text-red-400" />
           </a>
         </div>
+        </Fade>
 
         {/* Information */}
         <div className="flex-1 items-start p-4">

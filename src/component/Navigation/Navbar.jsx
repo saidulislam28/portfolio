@@ -3,6 +3,7 @@ import './nav.css';
 
 
 
+
 const Navbar = () => {
 
   useEffect(() => {
@@ -43,8 +44,10 @@ const Navbar = () => {
     </>
   );
   return (
-   
-      <div className="max-w-6xl mx-auto navbar block lg:fixed top-0 right-0 left-0 flex justify-between items-center">
+
+  
+
+      <div className="max-w-6xl mx-auto navbar  lg:fixed top-0 right-0 left-0  flex justify-between items-center">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -76,6 +79,8 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+    
+   
   );
 };
 

@@ -4,6 +4,8 @@ import assignment11 from '../../../public/assignment11picture.png';
 import assignment12 from '../../../public/assignment12picture.png';
 import { LuArrowUpRightSquare } from 'react-icons/lu';
 
+import { Fade } from "react-awesome-reveal";
+
 
 const Projects = () => {
   return (
@@ -13,6 +15,7 @@ const Projects = () => {
 <h5 id='projects' className=" text-2xl lg:text-5xl font-semibold text-white   text-center my-10 border-b-4 w-[60%] lg:w-[30%] mx-auto py-5 border-yellow-400 ">My Projects</h5>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-3 my-10">
+      <Fade duration={4000}>
       <div className="max-w-2xl overflow-hidden bg-gray-300 rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
@@ -37,13 +40,17 @@ const Projects = () => {
         </div>
         <div className='flex justify-between p-5 text-gray-700'>
 
-          <a href='https://tourop-client.netlify.app/' target='_blank' className='flex items-center gap-2 font-semibold hover:underline hover:text-black hover:font-bold'>Live Demo <LuArrowUpRightSquare /></a>
+          <a href='https://tourop-client.netlify.app/' target='_blank' className='flex items-center  gap-2 font-semibold hover:underline hover:text-black hover:font-bold'>Live Demo <LuArrowUpRightSquare /></a>
           <a href='https://github.com/saidulislam28/TourOP-client' target='_blank' className='flex items-center gap-2 font-semibold hover:underline hover:text-black hover:font-bold'>Github <IoLogoGithub />
           </a>
           <a href='' className='flex items-center gap-2 font-semibold hover:underline hover:text-black hover:font-bold'>View More <IoArrowForwardCircleOutline /></a>
 
         </div>
       </div>
+      </Fade>
+
+      <Fade  duration={4000}>
+
       <div className="max-w-2xl overflow-hidden bg-gray-300  rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
@@ -76,6 +83,9 @@ const Projects = () => {
 
         </div>
       </div>
+      </Fade>
+      <Fade  duration={4000}>
+
       <div className="max-w-2xl overflow-hidden bg-gray-300 rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
@@ -107,6 +117,7 @@ const Projects = () => {
 
         </div>
       </div>
+      </Fade>
     </div>
     </div>
   );
