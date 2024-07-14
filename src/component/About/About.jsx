@@ -46,7 +46,7 @@ const About = () => {
               <div className="w-full">
                 <a
                   className="btn button--flex text-white text-lg bg-gray-600"
-                  href="https://drive.google.com/file/d/1njagE_7Mm4VSn-i45tOSaBZ5zt85mChc/view?usp=sharing"
+                  href="https://drive.google.com/file/d/120GFBARyw-gck7HdQ65nNo8so61C4nal/view?usp=sharing"
                   target="_blank"
                 >
                   Resume <FiDownload className="ml-2" />
