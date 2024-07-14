@@ -1,7 +1,7 @@
 import { FaBootstrap, FaHtml5,  FaReact } from "react-icons/fa";
 import "./skill.css";
 import { IoLogoCss3, IoLogoFirebase, IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
-import { RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
+import {  RiTailwindCssLine } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 
 const Skill = () => {
@@ -90,19 +90,7 @@ const Skill = () => {
         <div className="blob bg-[#58c4dc]"></div>
       </div>
 
-      <div className="my-skills shadow-lg shadow-gray-400">
-        <div className="bg">
-          <div className="h-full flex flex-col justify-center items-center gap-2">
-            <h1 className="text-2xl flex flex-col items-center font-bold text-white">Next js
-              <span className="text-sm mt-2 text-gray-200 font-normal">basic</span>
-            </h1>
-            <h2 className="text-6xl text-black">
-            <RiNextjsFill />
-            </h2>
-          </div>
-        </div>
-        <div className="blob bg-gray-400"></div>
-      </div>
+      
 
 
       <div className="my-skills shadow-lg shadow-[#6aa05c]">
