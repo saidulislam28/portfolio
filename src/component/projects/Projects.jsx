@@ -15,7 +15,7 @@ const Projects = () => {
 <h5 id='projects' className=" text-2xl lg:text-5xl font-semibold text-white   text-center my-10 border-b-4 w-[60%] lg:w-[30%] mx-auto py-5 border-yellow-400 ">My Projects</h5>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-3 my-10">
-      <Fade duration={4000}>
+      <Fade duration={3000}>
       <div className="max-w-2xl overflow-hidden bg-gray-300 rounded-lg shadow-md ">
         <img
           className="object-cover w-full h-64"
@@ -49,7 +49,7 @@ const Projects = () => {
       </div>
       </Fade>
 
-      <Fade  duration={4000}>
+      <Fade  duration={3000}>
 
       <div className="max-w-2xl overflow-hidden bg-gray-300  rounded-lg shadow-md ">
         <img
@@ -84,7 +84,7 @@ const Projects = () => {
         </div>
       </div>
       </Fade>
-      <Fade  duration={4000}>
+      <Fade  duration={3000}>
 
       <div className="max-w-2xl overflow-hidden bg-gray-300 rounded-lg shadow-md ">
         <img
