@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef} from "react";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
@@ -22,7 +22,7 @@ const Contact = () => {
           e.target.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          toast.error('FAILED...', error.text);
         },
       );
   };
@@ -44,7 +44,7 @@ const handleWhatsAppClick = () => {
 
   return (
     <div className="py-10" id="contact1">
-      <h5 id="contact" className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[70%] lg:w-[30%] mx-auto py-5 border-yellow-400">For Contact</h5>
+      <h5 id="contact" className="text-2xl lg:text-5xl font-semibold text-white text-center my-10 border-b-4 w-[70%] lg:w-[25%] mx-auto py-5 border-yellow-400">For Contact</h5>
       <section className="py-6 bg-gray-800 text-gray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">

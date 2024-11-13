@@ -21,7 +21,7 @@ const About = () => {
             <IoLogoLinkedin className="text-3xl text-white bg-sky-400" />
           </a>
           <a href="https://www.instagram.com/saidul8883/" target="_blank">
-            <IoLogoInstagram className="text-3xl text-red-400" />
+            <IoLogoInstagram className="text-3xl text-red-500" />
           </a>
         </div>
         </Fade>
@@ -32,7 +32,7 @@ const About = () => {
             <div className="container mx-auto flex flex-col items-center space-y-8 text-left">
               <h1
                 id="about"
-                className="text-2xl lg:text-5xl font-bold leading-none w-full text-white"
+                className="text-2xl lg:text-5xl font-bold leading-none w-full text-white font-serif"
               >
                 MD Saidul Houlader
               </h1>
@@ -60,7 +60,7 @@ const About = () => {
         <img
           className="h-[360px] rounded-full my-image"
           src="https://i.postimg.cc/pX2X1Jkd/IMG-6712-1.jpg"
-          alt=""
+          alt="my imagek"
         />
       </div>
     </div>
