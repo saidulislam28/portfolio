@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./nav.css";
 import SLogo from "../../../public/s.png";
 
-const Navbar = () => {
+const Navbar = ({ data }) => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
@@ -79,13 +79,11 @@ const Navbar = () => {
         </div>
         <a href="/" id="home" className=" flex items-center gap-2">
           <div className="border h-8 w-8 bg-white rounded-full">
-            <img
-              className="h-full w-full"
-              src={SLogo}
-              alt="Article"
-            />
+            <img className="h-full w-full" src={SLogo} alt="Article" />
           </div>
-          <span className="text-3xl font-semibold font-serif">Saidul</span>
+          <span className="text-3xl font-semibold font-serif">
+            {data?.name || "Saidul"}
+          </span>
         </a>
       </div>
       <div className="navbar-end hidden lg:flex">
