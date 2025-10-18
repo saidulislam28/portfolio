@@ -9,7 +9,7 @@ const About = ({ data }) => {
       <div className="flex flex-col-reverse md:flex-row items-center gap-5 lg:gap-20 w-full lg:w-[80%] h-full">
         {/* Social Links */}
         <Fade direction="left" duration={2000}>
-          <div className="flex lg:flex-col justify-center gap-4">
+          <div className="flex flex-row md:flex-col justify-center gap-4">
             <a
               href={data?.github || "https://github.com/saidulislam28"}
               target="_blank"

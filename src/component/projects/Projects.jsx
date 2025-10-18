@@ -48,10 +48,10 @@ const Projects = ({ allProject }) => {
   // ];
 
   return (
-    <div id="projects1">
+    <div id="projects1" className="p-5">
       <h5
         id="projects"
-        className=" text-xl lg:text-3xl font-semibold text-white   text-center my-10 border-b-4 w-[60%] lg:w-[20%] mx-auto py-5 border-yellow-400 "
+        className=" text-xl lg:text-3xl font-semibold text-white   text-center my-10 border-b-4 w-[60%] md:w-[20%] mx-auto py-5 border-yellow-400 "
       >
         My Projects
       </h5>

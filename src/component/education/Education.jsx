@@ -1,15 +1,15 @@
 const Education = ({ education }) => {
   return (
-    <div id="education1" className="p-2">
+    <div id="education1" className="p-5">
       <h5
         id="education"
-        className="text-xl lg:text-3xl font-semibold text-white text-center my-10 border-b-4 w-[50%] lg:w-[18%] mx-auto py-5 border-yellow-400 "
+        className="text-xl lg:text-3xl font-semibold text-white text-center my-10 border-b-4 w-[50%] md:w-[18%] mx-auto py-5 border-yellow-400 "
       >
         Education
       </h5>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-5 rounded-sm ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-sm ">
         {education?.map((edu, ind) => (
-          <div className="flex space-x-2 sm:space-x-4 border rounded-xl w-full md:w-1/3 p-5 h-[250px]">
+          <div className="flex space-x-2 sm:space-x-4 border rounded-xl w-full p-5 h-[250px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

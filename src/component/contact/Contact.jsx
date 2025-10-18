@@ -41,10 +41,10 @@ const Contact = ({ data }) => {
   };
 
   return (
-    <div className="py-10" id="contact1">
+    <div className="py-10 p-5" id="contact1">
       <h5
         id="contact"
-        className="text-xl lg:text-3xl font-semibold text-white text-center my-10 border-b-4 w-[70%] lg:w-[20%] mx-auto py-5 border-yellow-400"
+        className="text-xl lg:text-3xl font-semibold text-white text-center my-10 border-b-4 w-[70%] md:w-[20%] mx-auto py-5 border-yellow-400"
       >
         For Contact
       </h5>
