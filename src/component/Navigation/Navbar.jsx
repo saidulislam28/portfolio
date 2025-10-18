@@ -82,7 +82,7 @@ const Navbar = ({ data }) => {
             <img className="h-full w-full" src={SLogo} alt="Article" />
           </div>
           <span className="text-3xl font-semibold font-serif">
-            {data?.name || "Saidul"}
+            {data?.web_name || "Saidul"}
           </span>
         </a>
       </div>

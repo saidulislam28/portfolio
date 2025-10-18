@@ -1,7 +1,7 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ data }) => {
   return (
     <div>
       <footer className="footer footer-center bg-base-200 text-base-content rounded p-2 ">
@@ -29,16 +29,24 @@ const Footer = () => {
         <nav>
           <div className="grid grid-flow-col gap-4">
             <a
-              href="https://www.facebook.com/profile.php?id=100024676355421"
+              href={
+                data?.facebook ||
+                "https://www.facebook.com/profile.php?id=100024676355421"
+              }
               target="_blank"
             >
               <FaFacebookSquare className="text-4xl" />
             </a>
-            <a href="https://github.com/saidulislam28" target="_blank">
+            <a
+              href={data?.github || "https://github.com/saidulislam28"}
+              target="_blank"
+            >
               <FaGithub className="text-4xl" />
             </a>
             <a
-              href="https://www.linkedin.com/in/saidul-houlader/"
+              href={
+                data?.linkedin || "https://www.linkedin.com/in/saidul-houlader"
+              }
               target="_blank"
             >
               <CiLinkedin className="text-4xl" />

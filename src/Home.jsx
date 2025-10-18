@@ -21,24 +21,22 @@ const Home = () => {
   console.log("data", data);
 
   if (isLoading) {
-    return (
-      <div>
-        <h1>loading.......</h1>
-      </div>
-    );
+    <div>
+      <h1>loading.......</h1>
+    </div>;
   }
 
   return (
     <div>
       <div className="max-w-6xl mx-auto">
-        <Navbar data={data.base_data}></Navbar>
-        <About></About>
-        <Skill></Skill>
-        <Projects></Projects>
-        <Education></Education>
-        <Contact></Contact>
+        <Navbar data={data?.base_data}></Navbar>
+        <About data={data?.base_data}></About>
+        <Skill skills={data?.skills}></Skill>
+        <Projects allProject={data?.projects}></Projects>
+        <Education education={data?.education}></Education>
+        <Contact data={data?.base_data}></Contact>
       </div>
-      <Footer></Footer>
+      <Footer data={data?.base_data}></Footer>
     </div>
   );
 };
