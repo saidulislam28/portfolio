@@ -9,7 +9,7 @@ const Education = ({ education }) => {
       </h5>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-sm ">
         {education?.map((edu, ind) => (
-          <div className="flex space-x-2 sm:space-x-4 border rounded-xl w-full p-5 h-[250px]">
+          <div className="flex space-x-2 sm:space-x-4 border rounded-xl w-full p-5 h-[250px] hover:border-green-400  transition-all duration-1000">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -1,5 +1,3 @@
-import React from "react";
-import { FaAnglesRight } from "react-icons/fa6";
 import { GoTriangleRight } from "react-icons/go";
 
 const Competencies = ({ data }) => {
