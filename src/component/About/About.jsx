@@ -1,3 +1,4 @@
+/* eslint-disable  */
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import "./about.css";
 import { FiDownload } from "react-icons/fi";

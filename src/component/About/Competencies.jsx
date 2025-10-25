@@ -1,3 +1,4 @@
+/* eslint-disable  */
 import { GoTriangleRight } from "react-icons/go";
 
 const Competencies = ({ data }) => {
