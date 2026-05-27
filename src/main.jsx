@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import Home from "./Home";
+import Project from "./Project";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/Project",
+    element: <Project />,
   },
 ]);
 

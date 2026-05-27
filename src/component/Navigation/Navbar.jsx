@@ -22,29 +22,29 @@ const Navbar = ({ data }) => {
   const navlinks = (
     <>
       <li>
-        <a href="#home" className="nav-link text-lg">
+        <a href="/#home" className="nav-link text-lg">
           Home
         </a>
       </li>
 
       <li>
-        <a href="#skill1" className="nav-link text-lg">
+        <a href="/#skill1" className="nav-link text-lg">
           Skills
         </a>
       </li>
       <li>
-        <a href="#projects1" className="nav-link text-lg">
+        <a href="/#projects1" className="nav-link text-lg">
           Projects
         </a>
       </li>
 
       <li>
-        <a href="#education1" className="nav-link text-lg">
+        <a href="/#education1" className="nav-link text-lg">
           Education
         </a>
       </li>
       <li>
-        <a href="#contact1" className="nav-link text-lg">
+        <a href="/#contact1" className="nav-link text-lg">
           Contact
         </a>
       </li>

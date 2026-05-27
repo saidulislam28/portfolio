@@ -1,5 +1,7 @@
-import { IoLogoGithub } from "react-icons/io5";
+/* eslint-disable */
+import { IoArrowForwardCircleOutline, IoLogoGithub } from "react-icons/io5";
 import { LuArrowUpRightSquare } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -57,7 +59,7 @@ const Projects = ({ allProject }) => {
       </h5>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center p-3 my-10">
-        {allProject?.map((project, id) => (
+        {allProject?.slice(0, 4).map((project, id) => (
           <Fade key={id} duration={3000}>
             <div className="max-w-2xl overflow-hidden bg-gray-600 rounded-lg shadow-md h-[550px] flex flex-col flex-grow-0">
               <img
@@ -97,17 +99,18 @@ const Projects = ({ allProject }) => {
                 >
                   Github <IoLogoGithub />
                 </a>
-
-                {/* <a
-                  href="#"
-                  className="flex items-center gap-2 font-semibold text-gray-300 hover:text-white hover:underline hover:font-bold transition"
-                >
-                  View More <IoArrowForwardCircleOutline />
-                </a> */}
               </div>
             </div>
           </Fade>
         ))}
+      </div>
+      <div className="flex justify-end">
+        <Link
+          to="/Project"
+          className="flex items-center gap-2 font-semibold text-gray-300 hover:text-white hover:font-bold transition text-2xl border-b-2 border-yellow-400"
+        >
+          More <IoArrowForwardCircleOutline />
+        </Link>
       </div>
     </div>
   );

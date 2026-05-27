@@ -2,8 +2,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  // baseURL: "https://portfolio-api-rouge.vercel.app/api/v1",
-  baseURL: "http://localhost:8000/api/v1",
+  baseURL: "https://portfolio-api-rouge.vercel.app/api/v1",
+  // baseURL: "http://localhost:8000/api/v1",
 });
 
 instance.interceptors.request.use(

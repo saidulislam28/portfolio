@@ -6,23 +6,23 @@ const Footer = ({ data }) => {
     <div>
       <footer className="footer footer-center bg-base-200 text-base-content rounded p-2 ">
         <nav className="grid grid-cols-2 lg:grid-flow-col gap-4">
-          <a href="#home" className="link link-hover">
+          <a href="/#home" className="link link-hover">
             Home
           </a>
-          <a href="#about" className="link link-hover">
+          <a href="/#about" className="link link-hover">
             About
           </a>
 
-          <a href="#skills" className="link link-hover">
+          <a href="/#skills" className="link link-hover">
             Skills
           </a>
-          <a href="#projects" className="link link-hover">
+          <a href="/#projects" className="link link-hover">
             Projects
           </a>
-          <a href="#education" className="link link-hover">
+          <a href="/#education" className="link link-hover">
             Education
           </a>
-          <a href="#contact" className="link link-hover">
+          <a href="/#contact" className="link link-hover">
             Contact
           </a>
         </nav>
