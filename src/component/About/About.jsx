@@ -52,8 +52,8 @@ const About = ({ data }) => {
                 <a
                   className="btn button-flex text-white text-lg bg-gray-600"
                   href={
-                    data?.resume ||
-                    "https://drive.google.com/file/d/120GFBARyw-gck7HdQ65nNo8so61C4nal/view?usp=sharing"
+                    // data?.resume ||
+                    "https://drive.google.com/file/d/1gcvCEFK9snSAtrAFuXJWccqv9AIReci8/view?usp=sharing"
                   }
                   target="_blank"
                 >

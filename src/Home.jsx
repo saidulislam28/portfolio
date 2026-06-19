@@ -13,7 +13,6 @@ import { GetData } from "./services/api";
 import { HOME_DATA } from "./services/endpoints";
 
 const Home = () => {
-
   const { data, isLoading } = useQuery({
     queryKey: ["get-home-data"],
     queryFn: async () => await GetData(HOME_DATA),
@@ -30,6 +29,8 @@ const Home = () => {
       <h1>loading.......</h1>
     </div>;
   }
+
+  console.log("config data", data);
 
   return (
     <div>
