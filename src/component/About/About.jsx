@@ -50,7 +50,7 @@ const About = ({ data }) => {
               <p className="mt-8 mb-12 text-lg">{data?.hero_desc}</p>
               <div className="w-full">
                 <a
-                  className="btn button--flex text-white text-lg bg-gray-600"
+                  className="btn button-flex text-white text-lg bg-gray-600"
                   href={
                     data?.resume ||
                     "https://drive.google.com/file/d/120GFBARyw-gck7HdQ65nNo8so61C4nal/view?usp=sharing"
